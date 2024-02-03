@@ -1,29 +1,45 @@
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <link rel="stylesheet" href="./src/styles.css">
-  </head>
-  <body>
-    <h1></h1>
+</head>
+<body>
+    <h1 id="title">Whack-a-Mole!</h1>
     <div>
-      <div>
-        <h2>Click start to play!</h2>
-      </div>
-      <div>
-        <h2>score: <span id="score">0</span></h2>
-      </div>
-      <div>
-          <h2><span id="timer">0</span> seconds left.</h2>
-      </div>
+        <button id="start">Start Game</button>
+        <h2>Score: <span id="score">0</span></h2>
+        <h2><span id="timer">60</span> seconds left.</h2>
     </div>
     <div class="grid">
       <div id="hole0" class="hole">
-        <div id="mole0" class="mole"></div>
+          <div id="mole0" class="mole"></div>
       </div>
       <div id="hole1" class="hole">
-        <div id="mole1" class="mole"></div>
+          <div id="mole1" class="mole"></div>
       </div>
-      <!--TODO: Add the missing holes and moles. -->
-    </div>
+      <!-- Repeating the structure for holes 2 through 8 -->
+      <div id="hole2" class="hole">
+          <div id="mole2" class="mole"></div>
+      </div>
+      <div id="hole3" class="hole">
+          <div id="mole3" class="mole"></div>
+      </div>
+      <div id="hole4" class="hole">
+          <div id="mole4" class="mole"></div>
+      </div>
+      <div id="hole5" class="hole">
+          <div id="mole5" class="mole"></div>
+      </div>
+      <div id="hole6" class="hole">
+          <div id="mole6" class="mole"></div>
+      </div>
+      <div id="hole7" class="hole">
+          <div id="mole7" class="mole"></div>
+      </div>
+      <div id="hole8" class="hole">
+          <div id="mole8" class="mole"></div>
+      </div>
+  </div>
     <script src="./src/index.js"></script>
-  </body>
+</body>
 </html>

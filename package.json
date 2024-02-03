@@ -2,7 +2,6 @@
   "name": "js-dev-b2b-final-capstone",
   "version": "1.0.0",
   "description": "js-dev-b2b-final-capstone qualified challenge",
-  "dependencies": {},
   "devDependencies": {
     "jest": "^29.0.0",
     "jest-puppeteer": "^6.0.0",
@@ -14,5 +13,20 @@
     "start": "parcel --port=3000 index.html",
     "test": "run-p -r start test:run",
     "test:run": "jest --env=puppeteer"
-  }
+  },
+  "main": "jest.config.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JonnyCash-glitch/js-dev-final-capstone-starter-whack-a-mole.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JonnyCash-glitch/js-dev-final-capstone-starter-whack-a-mole/issues"
+  },
+  "homepage": "https://github.com/JonnyCash-glitch/js-dev-final-capstone-starter-whack-a-mole#readme"
 }
