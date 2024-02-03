@@ -2,6 +2,7 @@ const holes = document.querySelectorAll('.hole');
 const moles = document.querySelectorAll('.mole');
 setEventListeners(moles);
 const startButton = document.querySelector('#start');
+startButton.addEventListener("click", startGame);
 const score = document.querySelector('#score');
 const timerDisplay = document.querySelector('#timer');
 
@@ -125,8 +126,6 @@ function startGame() {
   return "game started"; // Indicative return value for the start of the game
 }
 
-
-startButton.addEventListener("click", startGame);
 
 function whack(event) {
   if (event.target.classList.contains('mole')) {
