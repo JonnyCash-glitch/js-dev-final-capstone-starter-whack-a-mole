@@ -99,25 +99,32 @@ function startTimer() {
 }
 
 function startGame() {
-  time = 60;
-  points = 0;
-  score.textContent = points;
+  // Initialize or reset the game state
+  time = 60; // Reset the game timer to 60 seconds for a new game
+  points = 0; // Reset points, assuming 'points' is a global variable tracking the score
+  score.textContent = points; // Update the displayed score
 
+  // Clear any existing game intervals to ensure no multiple instances run
   if (gameInterval) clearInterval(gameInterval);
 
+  // Start showing moles
   gameInterval = setInterval(() => {
+    // Call showUp to display moles
     showUp();
+
+    // Decrease the timer each second
     time -= 1;
     updateTimer();
 
     if (time <= 0) {
-      clearInterval(gameInterval);
-      gameOver();
+      clearInterval(gameInterval); // Stop the interval
+      gameOver(); // Call gameOver to handle game-ending logic
     }
-  }, 1000);
+  }, 1000); // Interval set to decrement every 1000 milliseconds (1 second)
 
-  return "game started";
+  return "game started"; // Indicative return value for the start of the game
 }
+
 
 startButton.addEventListener("click", startGame);
 
